@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" ng-app="roommateBet">
 <head>
     <meta charset="UTF-8">
-    <title>Home Page</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"/>
+    <title>Home</title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.3.2.js"></script>
+    <script src="js/roommateBet.js"></script>
+    <link rel="stylesheet" href="css/vendor/bootstrap/bootstrap.css">
 </head>
 <body>
-
+<div class="container-fluid">
+    <div class="row">
+        <section class="col-lg-offset-1 col-lg-9 table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th>Termes du pari</th>
+                    <th>Enjeux</th>
+                    <th>Vainqueur</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>premier pari</td>
+                    <td>1 very parfait</td>
+                    <td>Marco</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</div>
+<div ng-controller="CreateBetController">
+    <a ng-click="open()">Nouveau Pari</a>
+</div>
 </body>
 </html>
